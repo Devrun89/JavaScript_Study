@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <script>
+        document.write("Rock Paper Scissors Game!");
+
+        var user = prompt("Enter One of The Rock Paper Scissors: ");
+        var num;
+
+        switch(user)
+        {
+            case "Rock":
+                num = 1;
+            break;
+
+            case "Paper":
+                num = 2;
+            break;
+
+            case "Scissors":
+                num = 3;
+            break;
+
+            default: alert("Wrong! Please Try Again");
+            location.reload();
+        }
+
+        var com = Math.ceil(Math.random() * 3);
+
+        if(num == com)
+        {
+            document.write("TIE");
+        }
+        else if(com == 2 && num < com)
+        {
+            document.write("LOST");
+        }
+        else if(com == 3 && num < com)
+        {
+            document.write("WIN!");
+        }
+        else if(com == 1 && num > com)
+        {
+            document.write("WIN!");
+        }
+        else if(com == 3 && num < com)
+        {
+            document.write("LOST");
+        }
+        else if(com == 1 && num < com)
+        {
+            document.write("LOST");
+        }
+        else if(com == 2 && num < com)
+        {
+            document.write("WIN!");
+        }
+    </script>
+</body>
+</html>
