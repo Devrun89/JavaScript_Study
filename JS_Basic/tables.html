@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Tables</title>
+</head>
+<body>
+    <script>
+        var num = 1; //Declare number for tables
+        var tb = "<table border=1>"; //Delcare HTML table tag with border size 1
+
+        for(var i = 1; i <= 5; i++)
+        {
+            tb += "<tr>"; // Declare table row tag
+            for(var j = 1; j <= 5; j++)
+            {
+                tb += "<td>" + num + "</td>"; //Delcare table data tag with numbers
+                num++; // Increase number
+            }
+            tb += "</tr>"; // Close Table row 
+        }
+        
+        tb += "</table>" // Close table
+
+        document.write(tb); // Write on page!
+    </script>
+    
+</body>
+</html>
