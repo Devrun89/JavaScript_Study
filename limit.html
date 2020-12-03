@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit over or not!</title>
+</head>
+<body>
+
+    <script>
+        //Declare variables
+        var Bus = 3000;
+        var Meal = 6000;
+        var Drink = 3000;
+
+        //Declare limit of daily money
+        var Limit = 10000;
+
+        //Find total of use
+        var total = Bus + Meal + Drink;
+
+        if(total > Limit) // Compare total and limit
+        {
+            var result = total - Limit;
+            document.write(result + " Over used"); 
+        }
+        else
+        {
+            var result = total - Limit;
+            document.write(result + "Left! Good!");
+        }
+    </script>
+    
+</body>
+</html>
